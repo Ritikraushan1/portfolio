@@ -38,7 +38,7 @@ function App() {
     <Testimonials />
     <Contact />
     <Footer />
-    <Toaster />
+    /* <Toaster />*/
     </>
   )
     /*:<em id="customMessage">Please change the ration to view!</em>*/

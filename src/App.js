@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 
 
 function App() {
-  // const [menuOpen, setMenuOpen]= useState(false);
+  /* const [menuOpen, setMenuOpen]= useState(false);
   //const [ratio, setRatio] = useState(window.innerWidth/window.innerHeight)
 
   //useEffect(() => {
@@ -25,13 +25,13 @@ function App() {
    // return () => {
     //  window.removeEventListener("resize", resizeRatio)
    // }
-  //}, [ratio])ratio<2?
+  //}, [ratio])ratio<2? <Home ratio={ratio} /> */
   
   return  (
     <>
     <HeaderPhone menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
     <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-    <Home ratio={ratio}/>
+    <Home />
     <Work />
     <Timeline />
     <Services />

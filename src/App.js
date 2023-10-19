@@ -13,21 +13,21 @@ import { useEffect, useState } from "react";
 
 
 function App() {
-  const [menuOpen, setMenuOpen]= useState(false);
-  const [ratio, setRatio] = useState(window.innerWidth/window.innerHeight)
+  // const [menuOpen, setMenuOpen]= useState(false);
+  //const [ratio, setRatio] = useState(window.innerWidth/window.innerHeight)
 
-  useEffect(() => {
-    const resizeRatio=()=>{
-      setRatio(window.innerWidth/window.innerHeight)
-    }
-    window.addEventListener("resize", resizeRatio)
+  //useEffect(() => {
+  //  const resizeRatio=()=>{
+   //   setRatio(window.innerWidth/window.innerHeight)
+   // }
+   // window.addEventListener("resize", resizeRatio)
   
-    return () => {
-      window.removeEventListener("resize", resizeRatio)
-    }
-  }, [ratio])
+   // return () => {
+    //  window.removeEventListener("resize", resizeRatio)
+   // }
+  //}, [ratio])ratio<2?
   
-  return ratio<2? (
+  return  (
     <>
     <HeaderPhone menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
     <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
@@ -40,7 +40,8 @@ function App() {
     <Footer />
     <Toaster />
     </>
-  ):<em id="customMessage">Please change the ration to view!</em>
+  )
+    //:<em id="customMessage">Please change the ration to view!</em>
 }
 
 export default App;

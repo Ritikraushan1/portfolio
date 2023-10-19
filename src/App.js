@@ -41,7 +41,7 @@ function App() {
     <Toaster />
     </>
   )
-    //:<em id="customMessage">Please change the ration to view!</em>
+    /*:<em id="customMessage">Please change the ration to view!</em>*/
 }
 
 export default App;

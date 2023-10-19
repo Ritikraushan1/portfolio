@@ -5,7 +5,7 @@ import { BsArrowUpRight, BsChevronDown } from "react-icons/bs"
 import me from "../Assets/me.png"
 
 
-const Home = ({ratio}) => {
+const Home = () => {
 
     const clientCount = useRef(null);
     const projectCount = useRef(null);
